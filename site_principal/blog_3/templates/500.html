@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}        
+    <section class="mt-3">
+        <header>
+            <h1>Erro 500</h1>
+        </header>
+        <div class="container sobre py-2 border border-secondary">          
+            <div class="blck_bg"></div>
+            <div class="text-center">
+            <figure>
+                <img class="img-fluid" src="{% static 'img/server500.png' %}" alt="Figura um tanto lúdica de pessoas consertando um mainframe.">
+            </figure>
+            <p>Alguma coisa saiu muito errada por aqui. <br>
+            Nosso servidor ficou bem confuso, espero que não seja sério... &#128557</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

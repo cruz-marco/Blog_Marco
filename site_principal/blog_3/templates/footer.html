@@ -1,0 +1,21 @@
+{% load static %}
+<footer class="footer container">
+    <div>
+      <div  class="p-2 row">
+        <div class="col-md-9 col-sm text-start">
+          <h2 class="h6 my-0">Biscoito da sorte (ou não):</h2>
+          <p class="my-0">lorem Ipsum</p>
+        </div>
+        <div class="col-md-3 col-sm text-end">
+          <h2 class="h6 my-0">Tecnologias</h2>
+          <a target="_blank" href="https://www.python.org/"><img class="icon" src="{% static 'img/python_icon.svg' %}" alt="Logotipo do Python"></a>
+          <a target="_blank" href="https://www.djangoproject.com/"><img class="icon" src="{% static 'img/django_icon.svg' %}" alt="Logotipo do Django"></a>
+          <a target="_blank" href="https://www.mysql.com/"><img class="icon" src="{% static 'img/mysql_icon.svg' %}" alt="Logotipo do MySQL"></a>
+          <a target="_blank" href="https://getbootstrap.com/"><img class="icon" src="{% static 'img/bootstrap_icon.svg' %}" alt="Logotipo do Bootstrap"></a>
+        </div>
+      </div>
+    </div>
+    <div class="m-0 p-0">
+      <p class="text-center small_font m-0 p-0">Marco Cruz - ©{% now "Y" %}</p>
+    </div>
+</footer>

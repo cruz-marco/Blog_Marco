@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <title>Titulo</title>    
+</head>
+<body>
+  <!-- Menu  Inicio-->
+    {% include 'menu.html' %}
+  <!-- Menu fim -->
+
+  <main class="container pt-5 pb-2 sobre">
+    <div class="fundo_sobre"></div>
+
+    <!-- Início do Conteúdo-->
+      {% block content %}{% endblock %}    
+    <!-- Fim do Conteúdo -->
+    
+  </main>
+
+  <!-- Rodapé Início -->   
+    {% include 'footer.html' %}
+  <!-- Rodapé fim-->
+  <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
